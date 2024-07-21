@@ -1,0 +1,17 @@
+[package]
+name = "rust_flight_apis"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix = "0.13.1"
+actix-web = "4.4.1"
+env_logger = "0.11.0"
+serde = "1.0.195"
+serde_json = "1.0.111"
+actix-files = "0.5"
+envy = "0.4"
+dotenv = "0.15"
+utoipa = { version="4.2.0", features = ["actix_extras"]}
+utoipa-swagger-ui = {version="6.0.0", features=["actix-web"]}
+log = "0.4"
