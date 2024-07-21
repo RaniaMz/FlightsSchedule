@@ -29,3 +29,28 @@ Accepts a JSON array of flights and returns the sorted flight path.
 cargo build
 cargo run
 ```
+#### Curl Request Example :
+```
+curl --location 'http://127.0.0.1:8080/api/calculate' \
+--header 'Content-Type: application/json' \
+--data '{
+    "flights": [
+        [
+            "IND",
+            "EWR"
+        ],
+        [
+            "SFO",
+            "ATL"
+        ],
+        [
+            "GSO",
+            "IND"
+        ],
+        [
+            "ATL",
+            "GSO"
+        ]
+    ]
+}'
+```
